@@ -1,0 +1,19 @@
+# Local Agent Configuration File
+# Copy this file to config.yaml and adjust the values for your setup
+
+# General variables
+MODEL_PROVIDER: "lmstudio"  # options: anythingllm, lmstudio, nexa, ollama
+STREAM: False  # not working, do not use yet (or submit a PR!)
+STREAM_TIMEOUT: 30
+
+# Memory settings
+SHORT_MEMORY_SIZE: 20  # messages
+LONG_MEMORY_SIZE: 5096  # tokens
+DISABLE_SHORT_MEMORY: False
+DISABLE_LONG_MEMORY: True # not working, do not use yet (or submit a PR!)
+
+# LM Studio configuration
+LM_STUDIO_API_KEY: "lm-studio" # placeholder, not required
+LM_STUDIO_MODEL: "llama-3.2-3b-instruct"
+LM_STUDIO_URL: "http://localhost:1234/v1"
+
