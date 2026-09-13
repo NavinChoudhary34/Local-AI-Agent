@@ -1,13 +1,13 @@
 import asyncio
 
 from src.agent import Agent
-from src.tools import tools, tool_description
+from src.tools import tools, tool_descriptions
 
 def main():
     instructions= (
         "You are a tool calling agent that may use the following tools by rsponding according to their instructions.\n"
         "Available tools.\n"
-        f"{tool_description}\n"
+        f"{tool_descriptions}\n"
         "If no tool is needed, respond with the final answer."
     )
 

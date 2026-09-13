@@ -35,7 +35,7 @@ class Agent :
 
 
         #call te model
-        response = self.model.chat_complete(history)
+        response = self.model.chat_completion(history)
 
         #check the output for a tool match
         match = tool_call_pattern.match(response.strip())

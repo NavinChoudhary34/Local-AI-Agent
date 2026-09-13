@@ -13,7 +13,7 @@ class Tool:
 def time_tool():
     """tell the current time""" 
     now = datetime.now()
-    return f"the current time is {now.strftime('%I:%M%p').lstring('0').lower()} on {now.strftime('%d %B %Y')}"
+    return f"the current time is {now.strftime('%I:%M%p').lstrip('0').lower()} on {now.strftime('%d %B %Y')}"
 
 tools =[
     Tool(
